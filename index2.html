@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Qual é a música?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+  <body>
+    <navbar id="navbar">
+			<div class="navbar-container">
+				<img src="logo.png" alt="" class="logo" />
+				<ul class="navbar-items">
+					<li class="navbar-item"></li>
+					<li class="navbar-item"></li>
+					<li class="texto">Entre na vibe</li>
+					<a class="llk" href="https://www.spotify.com/br-pt/download/windows/"><li class="llk">Baixe nosso App</li></a>
+				</ul>
+			</div>
+		</navbar>
+      
+    <div class="title-container">
+      <h1>VAMOS TESTAR SEU CONHECIMENTO MUSICAL?</h1>
+      <h2>TESTE AGORA</h2>
+    </div>
+    
+    <input type="text" id="player-name" name="player-name" placeholder="Seu Nome">
+   
+    <button id="start-game" onclick="startGame()">Iniciar jogo</button>
+    <div id="game-container"></div>
+    <div id="album-container"></div>
+    <div id="error-message" class="hidden">
+      <p>Você errou! Tente novamente.</p>
+      <button id="try-again">Tentar Novamente</button>
+    </div>
+    
+    <div id="music-controls-container" class="hidden">
+   
+
+   <button id="play-music" class="hidden">
+  <i id="play-icon" class="fas fa-pause"></i>
+</button>
+<div class="score-container">
+  <p id="score">Pontuação: 0</p>
+</div>
+    <label id="lbl-resposta" for="resposta" class="hidden">Qual é a música?</label>
+    <input type="text" id="resposta" class="hidden"></input>
+    <button id="btn-resposta" class="hidden">Enviar</button>
+    </div>
+</body>
+<script src="https://sdk.scdn.co/spotify-player.js"></script>
+<script src="script.js"></script>
+</html>
